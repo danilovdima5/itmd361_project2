@@ -47,3 +47,9 @@ nav > ul {
     display: flex;
     justify-content: space-around;
 }
+
+#root, main {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}

@@ -16,50 +16,97 @@
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Resume</a>
-        </li>
-        <li>
-          <a href="portfolio.html">Portfolio</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-      </ul>
-    </nav>
+    <div id="root">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Resume</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
 
-    <main>
-      <h1>Dmitrii Danilov's about</h1>
+      <main>
+        <section>
+          <h1>Dmitrii Danilov's about</h1>
 
-      <p>
-        Hello! I'm an experienced frontend developer with a passion for creating dynamic, user-friendly applications. My
-        expertise lies in Angular, React, JavaScript, TypeScript, Firebase, and AWS, and I enjoy exploring new technologies
-        that push the boundaries of web development.
-      </p>
+          <p>
+            Hello! I'm an experienced frontend developer with a passion for creating dynamic, user-friendly applications. My
+            expertise lies in Angular, React, JavaScript, TypeScript, Firebase, and AWS, and I enjoy exploring new technologies
+            that push the boundaries of web development.
+          </p>
 
-      <p>
-        Outside of work, I love contributing to open-source projects, mentoring junior developers, and writing technical
-        blogs on best practices in frontend development.
-      </p>
+          <p>
+            Outside of work, I love contributing to open-source projects, mentoring junior developers, and writing technical
+            blogs on best practices in frontend development.
+          </p>
+        </section>
 
-      <h2>Hobbies & Interests</h2>
-      <ul>
-        <li>Building innovative web applications</li>
-        <li>Exploring cloud computing with AWS</li>
-        <li>Learning new programming languages</li>
-        <li>Traveling and experiencing new cultures</li>
-      </ul>
+        <section>
+          <h2>Hobbies & Interests</h2>
+          <ul>
+            <li>Building innovative web applications</li>
+            <li>Exploring cloud computing with AWS</li>
+            <li>Learning new programming languages</li>
+            <li>Traveling and experiencing new cultures</li>
+          </ul>
+        </section>
 
-      <h2>Video presentation</h2>
-      <video controls height="300">
-        <source src="videos/about.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+        <section>
+          <h2>Video presentation</h2>
+          <video controls height="300">
+            <source src="videos/about.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </section>
 
-      <!-- <h2>Validation</h2>
-      <img src="images/about-validate.png" alt="About HTML Validation"> -->
-    </main>
+        <section>
+          <h2>Contact Information</h2>
+
+          <address>
+            Email: <a href="mailto:dmitrii@example.com">dmitrii@example.com</a><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/dmitrii-danilov" target="_blank">Dmitrii Danilov</a><br>
+            GitHub: <a href="https://github.com/dmitrii-danilov" target="_blank">github.com/dmitrii-danilov</a>
+          </address>
+        </section>
+
+        <section>
+          <h2>Key Skills</h2>
+          <ul>
+            <li>JavaScript & TypeScript</li>
+            <li>Angular & React</li>
+            <li>Cloud Computing (AWS, Firebase)</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Watch My Talk</h2>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section>
+          
+          <h2>What People Say</h2>
+          <blockquote>
+            "Dmitrii is a fantastic developer with an eye for detail. His expertise in Angular and JavaScript has helped our projects thrive!"
+          </blockquote>
+        </section>
+
+
+        <!-- <h2>Validation</h2>
+        <img src="images/about-validate.png" alt="About HTML Validation"> -->
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Dmitrii Danilov. All Rights Reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
