@@ -16,57 +16,108 @@
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">Resume</a>
-        </li>
-        <li>
-          <a href="portfolio.html">Portfolio</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-      </ul>
-    </nav>
+    <div id="root">
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Resume</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
 
-    <main>
-      <h1>Dmitrii Danilov's resume</h1>
+      <main>
+        <h1>Dmitrii Danilov's resume</h1>
 
-      <h2>Summary</h2>
-      <p>
-        Experienced front-end developer with expertise in Angular, React, JavaScript, TypeScript, AWS and Firebase
-      </p>
+        <section>
+          <h2>Summary</h2>
+          <p>
+            Experienced front-end developer with expertise in Angular, React, JavaScript, TypeScript, AWS and Firebase
+          </p>
+        </section>
 
-      <h2>Experience</h2>
+        <section>   
+          <h2>Experience</h2>
+          <table>
+            <thead>    
+              <tr>
+                <th>Job Title</th>
+                <th>Company</th>
+                <th>Duration</th>
+              </tr>
+            </thead>
 
-      <h3>Senior Software Engineer</h3>
-      <p>EPAM Systems - 2025 Feb to Present</p>
+            <tbody>
+              <tr>
+                <td>Senior Software Engineer</td>
+                <td>EPAM Systems</td>
+                <td>2025 Feb - Present</td>
+              </tr>
+              <tr>
+                <td>Senior Software Engineer</td>
+                <td>SberDevices</td>
+                <td>2024 Mar - 2025 Feb</td>
+              </tr>
+              <tr>
+                <td>Middle Frontend Developer</td>
+                <td>STRONG TEAM</td>
+                <td>2022 Jul - 2024 Mar</td>
+              </tr>
+              <tr>
+                <td>Junior Frontend Developer</td>
+                <td>Center for Digital Development</td>
+                <td>2019 Oct - 2022 Jul</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-      <h3>Senior Software Engineer</h3>
-      <p>SberDevices - 2024 March to 2025 Feb</p>
+        <section>  
+          <h2>Education</h2>
+          <p>Bachelor’s Degree in Computer Science</p>
+        </section>
 
-      <h3>Middle Frontend Developer</h3>
-      <p>STRONG TEAM - 2022 Jul to 2024 March</p>
+        <section>
+          <h2>Skills</h2>
+          <ul>
+            <li>Angular <progress value="90" max="100"></progress></li>
+            <li>React <progress value="85" max="100"></progress></li>
+            <li>JavaScript <progress value="95" max="100"></progress></li>
+            <li>TypeScript <progress value="80" max="100"></progress></li>
+            <li>AWS <progress value="70" max="100"></progress></li>
+            <li>Firebase <progress value="75" max="100"></progress></li>
+          </ul>
+        </section>
 
-      <h3>Junior Frontend Developer</h3>
-      <p>Center for Digital Development - 2019 Oct to 2022 Jul</p>
+        <section>
+          <h2>Certifications</h2>
+          <details>
+            <summary>Click to view certifications</summary>
+            <ul>
+              <li>AWS Certified Developer – Associate</li>
+              <li>Google Firebase Developer Certification</li>
+              <li>JavaScript Expert Certification</li>
+            </ul>
+          </details>
+        </section>
 
-      <h2>Education</h2>
-      <p>Bachelor’s Degree in Computer Science</p>
+        <section>
+          <h2>Portfolio Highlight</h2>
+          <figure>
+            <img src="images/portfolio-screenshot.jpg" alt="Portfolio Preview" width="400">
+            <figcaption>Screenshot of my latest portfolio project.</figcaption>
+          </figure>
+        </section>
+      </main>
 
-      <h2>Skills</h2>
-      <ul>
-        <li>Angular</li>
-        <li>React</li>
-        <li>JavaScript</li>
-        <li>TypeScript</li>
-        <li>AWS</li>
-        <li>Firebase</li>
-      </ul>
-
-      <!-- <h2>Validation</h2>
-      <img src="images/resume-validate.png" alt="Resume HTML Validation"> -->
-    </main>
+      <footer>
+        <p>&copy; 2025 Dmitrii Danilov. All Rights Reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
