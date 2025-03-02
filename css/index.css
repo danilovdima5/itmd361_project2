@@ -1,0 +1,24 @@
+#resumeLinkBtn {
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+}
+
+address {
+    padding: 0.5rem;
+    border: 1px dashed red;
+}
+
+blockquote {
+    background: gold;
+    color: black;
+    font-size: 1.5rem;
+}
+
+p + p {
+    margin-top: 1.5rem;
+}
+
+#keySkillsList {
+    color: orange;
+}
