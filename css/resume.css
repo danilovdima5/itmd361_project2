@@ -1,0 +1,29 @@
+#resumeLinkBtn {
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+}
+
+h1::before {
+    content: "\01F525";
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    font-weight: bold;
+}
+
+th, td {
+    padding: 0.25rem;
+}
