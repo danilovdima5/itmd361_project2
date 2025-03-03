@@ -1,25 +1,84 @@
 #portfolioLinkBtn {
-    font-size: 2rem;
-    font-weight: bold;
-    color: gold;
+  font-size: 2rem;
+  font-weight: bold;
+  color: gold;
 }
 
 blockquote {
-    background: gold;
-    color: black;
-    font-size: 1.5rem;
+  background: gold;
+  color: black;
+  font-size: 1.5rem;
 }
 
 blockquote + blockquote {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 section > img {
-    max-width: 100%;
-    height: 300px;
-    margin-bottom: 1rem;
+  max-width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
 }
 
 h1::before {
-    content: "\01F525";
+  content: "\01F525";
+}
+
+/* Slider */
+
+.slider-container {
+    width: 100%;
+  max-width: 600px;
+  height: 480px;
+  margin: 0rem auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.project {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  position: absolute;
+  width: 100%;
+}
+
+.active {
+  display: block;
+  opacity: 1;
+}
+
+.control-btn {
+  padding: 0.75rem 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.control-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Dots navigation */
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0.5rem;
+  background-color: lightgray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background-color: #007bff;
 }
