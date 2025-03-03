@@ -27,3 +27,23 @@ thead {
 th, td {
     padding: 0.25rem;
 }
+
+@media screen and (min-width: 700px) {
+  nav > ul {
+    flex-direction: row;
+  }
+}
+
+
+#skillsWithProgress li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    #skillsWithProgress li {
+        justify-content: unset;
+    }
+}
