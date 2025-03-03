@@ -43,6 +43,8 @@
 let map;
 
 const chicagoCoords = { lat: 41.9, lng: -87.65 };
+const newYorkCoords = { lat: 40.75, lng: -74 };
+const kansasCoords = { lat: 39.10, lng: -94.58 };
 
 async function initMap() {
   const { Map } = await google.maps.importLibrary("maps");
@@ -55,3 +57,57 @@ async function initMap() {
 }
 
 initMap();
+
+async function initMarkers() {
+  const { AdvancedMarkerElement  } = await google.maps.importLibrary("marker");
+
+  new AdvancedMarkerElement({
+    map,
+    position: chicagoCoords,
+  });
+
+  new AdvancedMarkerElement({
+    map,
+    position: newYorkCoords,
+  });
+
+  new AdvancedMarkerElement({
+    map,
+    position: kansasCoords,
+  });
+}
+
+initMarkers();
+
+async function initLines() {
+  const { Polyline } = await google.maps.importLibrary("maps");
+
+  const flightPlanCoordinates = [
+    chicagoCoords,
+    newYorkCoords,
+    kansasCoords,
+    chicagoCoords,
+  ];
+
+  const flightPath = new Polyline({
+    path: flightPlanCoordinates,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
+  });
+
+  flightPath.setMap(map);
+}
+
+initLines();
+
+async function initTrafficLayer() {
+  const { TrafficLayer } = await google.maps.importLibrary("maps");
+
+  const trafficLayer = new TrafficLayer();
+
+  trafficLayer.setMap(map);
+}
+
+initTrafficLayer();
